@@ -55,11 +55,16 @@ public class Player {
             if(selectedsquare.getisattacked())
             System.out.println(String.format("%s just hit a exposed square,  lost one turn, obserbe before you make a guess ", this.name));
             else
-            selectedsquare.setisattacked(true);
+            {
+                System.out.println(String.format("%s missed", this.name));
+                selectedsquare.setisattacked(true);
+            }
         }
+        System.out.println(name+"'s board: \n"+playboard.toString());//show the board
         if (playboard.numofdestroyedships == LargeBattleShip.maxnum + MediumBattleShip.maxnum + SmallBattleShip.maxnum)// destroyed all the enemy ships                                                                                                      // enemy ships
             return true;
         else
             return false;
+        
     }
 }

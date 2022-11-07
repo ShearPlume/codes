@@ -28,8 +28,8 @@ public class Board {
         }
     }
 
-    public void generateShips() {        
-        SmallBattleShip small[]=new SmallBattleShip[SmallBattleShip.maxnum];
+    public void generateShips() {      
+        SmallBattleShip small[]=new SmallBattleShip[SmallBattleShip.maxnum];//maxnum means ship size and ship hp both
         MediumBattleShip medium[]=new MediumBattleShip[MediumBattleShip.maxnum];
         LargeBattleShip large[]=new LargeBattleShip[LargeBattleShip.maxnum];
         int shipHeadRow;
@@ -137,6 +137,7 @@ public class Board {
         }
         return s;
     }
+    
     public String toString1() {
         String s="";
         for(int i=0;i<row;i++)

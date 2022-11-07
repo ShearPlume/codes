@@ -11,6 +11,7 @@ public class Battleship {
 
     }
 
+    
     public int getsize()
     {
         return this.Size;
