@@ -1,0 +1,16 @@
+C:\Users\Admin\Documents\C# Files\obj\Debug\net5.0\C# Files.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\C# Files\obj\Debug\net5.0\C# Files.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\C# Files\obj\Debug\net5.0\C# Files.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\C# Files\obj\Debug\net5.0\C# Files.AssemblyInfo.cs
+C:\Users\Admin\Documents\C# Files\obj\Debug\net5.0\C# Files.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\C# Files\bin\Debug\net5.0\C# Files.exe
+C:\Users\Admin\Documents\C# Files\bin\Debug\net5.0\C# Files.deps.json
+C:\Users\Admin\Documents\C# Files\bin\Debug\net5.0\C# Files.runtimeconfig.json
+C:\Users\Admin\Documents\C# Files\bin\Debug\net5.0\C# Files.runtimeconfig.dev.json
+C:\Users\Admin\Documents\C# Files\bin\Debug\net5.0\C# Files.dll
+C:\Users\Admin\Documents\C# Files\bin\Debug\net5.0\ref\C# Files.dll
+C:\Users\Admin\Documents\C# Files\bin\Debug\net5.0\C# Files.pdb
+C:\Users\Admin\Documents\C# Files\obj\Debug\net5.0\C# Files.dll
+C:\Users\Admin\Documents\C# Files\obj\Debug\net5.0\ref\C# Files.dll
+C:\Users\Admin\Documents\C# Files\obj\Debug\net5.0\C# Files.pdb
+C:\Users\Admin\Documents\C# Files\obj\Debug\net5.0\C# Files.genruntimeconfig.cache
