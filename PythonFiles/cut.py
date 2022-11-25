@@ -2,9 +2,10 @@ import time
 import pyperclip
 def delete_newline_char(message):
     """删除message字符串中的换行符和换行连字符"""
-    message = message.replace('. \r\n', '*-')      
+    message = message.replace('. \r\n', '*-')        
+    message = message.replace('.\r\n', '*-') 
     # 把message中的所有正常换行'.\r\n'替换成'*-'
-    message = message.replace('\r\n', ' ') 
+
     # 把message中的所有不想出现的'\r\n'替换成空格
     message = message.replace('\2', '')          
     # 删除单词中间的换行连字符
