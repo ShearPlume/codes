@@ -14,6 +14,7 @@ content = delete_newline_char(content)
 # 删除content中的换行符
 pyperclip.copy(content)     
 # 把content的内容复制到剪贴板
+print("先复制再粘贴，对Deepl的Ctrl+c+c快捷键没用，但是你可以Ctrl+c+c后再Ctrl+a再Ctrl+v，效率差不多")
 while True:  #每隔一秒查询一次剪贴板，如果剪贴板的内容有更新，则重复刚才的动作
     time.sleep(1)       
     # 暂停一秒钟
