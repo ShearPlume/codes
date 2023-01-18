@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch mainjava2",
+            "request": "launch",
+            "mainClass": "week8lab.mainjava2",
+            "projectName": "Java Files_fe322772"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
