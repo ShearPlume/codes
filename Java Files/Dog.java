@@ -1,8 +1,7 @@
-public class Dog extends test {
+public class Dog  {
     protected boolean cute;
 
     public Dog(int legs, boolean cute) {
-        super(legs);
         this.cute = cute;
     }
 

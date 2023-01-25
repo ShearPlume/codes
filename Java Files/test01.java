@@ -4,11 +4,7 @@ import java.util.Map;
 public class test01 {
     public static void main(String[] args) {
 
-        test t1=new test(1);
-        System.out.println(t1.a);
-        test t2=new test(2);
-        System.out.println(t1.a);
-        System.out.println(t2.a);
+
     }
     static public List fun(int[] nums, int target)
     {

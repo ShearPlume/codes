@@ -19,4 +19,5 @@ public class Cat extends Pet{
         // TODO Auto-generated method stub
         return name+" is a "+breed+" and enjoys staying at "+favoruteSpot+" pls do not bother them.";
     }
+    
 }

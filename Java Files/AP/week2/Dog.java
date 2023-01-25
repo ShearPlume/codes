@@ -16,15 +16,17 @@ public class Dog extends Pet{
         favouriteToy=ifavouriteToy;
     }
 
-    void provideBone()
-    {
-        System.out.println(name+" says thanks for the bone!");
-    }
+
 
     @Override
     public String toString() {
         // TODO Auto-generated method stub
         return name+" is a "+breed+" and enjoys playing with "+favouriteToy+" every afternoon.";
     }
-    
+
+    void provideBone()
+    {
+        System.out.println(name+" says thanks for the bone!");
+    }
+
 }

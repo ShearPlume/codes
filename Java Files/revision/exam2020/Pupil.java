@@ -78,7 +78,7 @@ public class Pupil {
         }
         if(!ifexists)
         {
-            Pupil [] newpupils=new Pupil[pupils.length+1]
+            Pupil [] newpupils=new Pupil[pupils.length+1];
             for(int i=0;i<pupils.length;i++)
             {
                 newpupils[i]=pupils[i];                
