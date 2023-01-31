@@ -8,12 +8,12 @@ public class test {
         this.a=m;
     }
     public static void main(String[] args) {
-        List <String>list = new ArrayList();
-        list.add("22");
-        list.add("33");
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println((String)list.get(i));
-        }
+       String int1="50";
+       String double1="0.002";
+       String test1="   ddd  dd   dd   dd  ";
+       System.out.println(test1.trim());
+       System.out.println(Integer.parseInt(int1)+""+Double.parseDouble(double1));
+
     }
 
 }
