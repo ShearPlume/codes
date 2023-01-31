@@ -1,10 +1,4 @@
-import jieba
-import jieba.analyse
-import jieba.posseg
+from ctypes.wintypes import *
+from ctypes import  windll
 
-str_new='希望明天没有疫情'
-sentence_seged=jieba.posseg.cut(str_new)
-outstr=''
-for x in sentence_seged:
-    outstr=outstr+f'{x.word}/{x.flag}'
-print(outstr)
+windll.user32.RegisterHotKey(0x0000, 0, 4)

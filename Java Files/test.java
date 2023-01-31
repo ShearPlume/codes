@@ -10,7 +10,13 @@ class ListingWords {
         return --n;
     }
     public static void main(String[] args) {
-        System.out.println(f1(0,12));
+       String int1="50";
+       String double1="0.002";
+       String test1="   ddd  dd   dd   dd  ";
+       System.out.println(test1.trim());
+       System.out.println(Integer.parseInt(int1)+""+Double.parseDouble(double1));
+
+    }
 
     }
 }

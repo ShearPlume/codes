@@ -26,10 +26,10 @@ pyperclip.copy(content)
 print("先复制再粘贴，对Deepl的Ctrl+c+c快捷键没用，但是你可以Ctrl+c+c后再Ctrl+a再Ctrl+v，效率差不多\n\n修改了一下程序，对复制文本里本身正确的以句号或问号结尾的换行不会删除了，只会删除错误的半句中途换行")
 print("###########ctrl+f10来暂停/恢复此功能############")
 print("coded by Franklin")
-unlocked=True
+x=True;
 # delete_newline_char('the diverse population the perfect ecosystem for its headquarters.  (a) The Oceania Airlines management team are concerned about terrorist attacks in')
-while unlocked:  #每隔一秒查询一次剪贴板，如果剪贴板的内容有更新，则重复刚才的动作
-      
+while True:
+    time.sleep(0.1)       
     # 暂停一秒钟
     content_tmp = pyperclip.paste()     
     # 获取剪贴板的内容
@@ -38,5 +38,4 @@ while unlocked:  #每隔一秒查询一次剪贴板，如果剪贴板的内容�
         content = content_tmp
         content = delete_newline_char(content)
         pyperclip.copy(content)    
-
 
