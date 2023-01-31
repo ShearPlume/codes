@@ -1,6 +1,7 @@
 package demo;
 
 import akka.actor.ActorRef;
+import akka.actor.FSM.State;
 import commands.BasicCommands;
 import structures.basic.Card;
 import structures.basic.EffectAnimation;
@@ -419,9 +420,21 @@ public class CommandDemo {
 			try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 
 			unitID++;
-		}
-
+		}	
 
 	}
+	public static void executeDemo01(ActorRef out) 
+		{
+			// BasicCommands.addPlayer1Notification(out, "drawTile[3,2]", 2); 		Tile tile = BasicObjectBuilders.loadTile(3, 2);
+			for(int i=0;i<5;i++)
+			{
+				for(int j=0;j<10;j++)
+				{
+					Tile tile = BasicObjectBuilders.loadTile(j, i);
+					BasicCommands.drawTile(out, tile, 0);
+				}
+			}	
+			
+		}
 
 }
