@@ -1,4 +1,4 @@
-package ADS;
+package ADS.week1;
 import java.util.Scanner;
 
 public class GCD2 {

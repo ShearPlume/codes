@@ -1,4 +1,4 @@
-package ADS;
+package ADS.week1;
 
 public class Findroots {
     void func(int a, int b, int c) {
