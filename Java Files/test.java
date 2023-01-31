@@ -1,11 +1,13 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
-public class test {
-    public static int a;
-    public test(int m)
+class ListingWords {
+    static public int f1(int n,int x)
     {
-        this.a=m;
+        while((x-Math.pow(2, n))>0)
+        {
+            n++;
+        }
+        return --n;
     }
     public static void main(String[] args) {
        String int1="50";
@@ -16,4 +18,5 @@ public class test {
 
     }
 
+    }
 }
