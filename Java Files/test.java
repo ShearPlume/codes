@@ -1,22 +1,20 @@
 import java.util.*;
 
 class ListingWords {
-    static public int f1(int n,int x)
-    {
-        while((x-Math.pow(2, n))>0)
-        {
-            n++;
-        }
-        return --n;
-    }
+
     public static void main(String[] args) {
-       String int1="50";
-       String double1="0.002";
-       String test1="   ddd  dd   dd   dd  ";
-       System.out.println(test1.trim());
-       System.out.println(Integer.parseInt(int1)+""+Double.parseDouble(double1));
+       String int1="501324ab123";
+       System.out.println(int1);
+       int1.replace("ab", "1998872");
+       int1.replace("\n", "111");
+       System.out.println(int1);
+       String str1 = "abc cba";
+
+//所有出现的“ a”都替换为“ z”
+
+System.out.println(str1.replace('a', 'z'));
 
     }
 
-    }
+    
 }

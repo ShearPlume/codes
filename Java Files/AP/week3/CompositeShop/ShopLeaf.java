@@ -16,6 +16,21 @@ public class ShopLeaf implements ShopComponent {
 			return basePrice;
 		}
 	}
+	@Override
+	public Double compDelivery() {
+		if(canBeDiscounted)
+		return basePrice*0.05;
+		else
+		return 0.0;
+	}
+	boolean getCanBeDis()
+	{
+		return canBeDiscounted;
+	}
+	double getBasePrice()
+	{
+		return basePrice;
+	}
 	// Nice display
 	public String toString() {
 		return name;

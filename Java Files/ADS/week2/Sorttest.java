@@ -14,7 +14,6 @@ public class Sorttest {
                 if (((Comparable) a[i]).compareTo((Comparable)a[i + 1]) >0)// bigger, not ascending
                 {
                     return false;
-
                 }
 
             }

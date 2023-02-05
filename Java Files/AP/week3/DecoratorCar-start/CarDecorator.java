@@ -10,3 +10,18 @@ public abstract class CarDecorator extends Car {
 		return decoratedCar.getDescription();
 	}
 }
+
+// abstract class A
+// {
+// 	abstract void A();
+// }
+
+// abstract class B extends A
+// {
+// 	abstract void B()
+// }
+
+// class C extends B
+// {
+	
+// }
