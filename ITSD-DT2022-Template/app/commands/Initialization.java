@@ -6,6 +6,7 @@ import akka.actor.ActorRef;
 import structures.basic.BattleField;
 import structures.basic.Card;
 import structures.basic.Player;
+import structures.basic.Tile;
 import structures.basic.Unit;
 import structures.GameState;
 import utils.BasicObjectBuilders;
@@ -24,10 +25,11 @@ public class Initialization {
 		//	4	口	口	口	口	口	口	口	口	口
 		BattleField battleField = new BattleField();
 		BasicCommands.addPlayer1Notification(out, "Preparing battle field...", 4);
+		Tile t;
 		for(int x = 0 ; x <= 8 ; x++) {
 			for(int y = 0 ; y <= 4 ; y++) {
-				battleField.tiles[y][x] = BasicObjectBuilders.loadTile(x, y);
-				BasicCommands.drawTile(out, battleField.tiles[y][x], 0);
+				t= BasicObjectBuilders.loadTile(x, y);
+				BasicCommands.drawTile(out, t, 0);
 				try {Thread.sleep(50);} catch (InterruptedException e) {e.printStackTrace();}
 			}
 		}

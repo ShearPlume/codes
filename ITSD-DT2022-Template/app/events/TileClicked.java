@@ -4,6 +4,7 @@ package events;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import akka.actor.ActorRef;
+import commands.TileClickedToDo;
 import structures.GameState;
 import structures.basic.Player;
 
@@ -28,6 +29,8 @@ public class TileClicked implements EventProcessor{
 
 		int tilex = message.get("tilex").asInt();
 		int tiley = message.get("tiley").asInt();
+
+		TileClickedToDo.clickedResponce(out,tilex,tiley);
 		
 //		if (gameState.something == true) {
 //			// do some logic

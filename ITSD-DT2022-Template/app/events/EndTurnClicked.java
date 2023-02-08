@@ -3,6 +3,7 @@ package events;
 import com.fasterxml.jackson.databind.JsonNode;
 
 import akka.actor.ActorRef;
+import commands.UsingEndTurnClickedToTest;
 import structures.GameState;
 import structures.basic.Player;
 
@@ -21,7 +22,7 @@ public class EndTurnClicked implements EventProcessor{
 
 	@Override
 	public void processEvent(ActorRef out, GameState gameState, JsonNode message) {
-		
+		UsingEndTurnClickedToTest.test(out);
 	}
 
 	@Override
