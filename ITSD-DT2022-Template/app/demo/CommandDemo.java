@@ -1,8 +1,8 @@
 package demo;
 
 import akka.actor.ActorRef;
-import akka.actor.FSM.State;
 import commands.BasicCommands;
+import structures.basic.BattleField;
 import structures.basic.Card;
 import structures.basic.EffectAnimation;
 import structures.basic.Player;
@@ -29,6 +29,7 @@ public class CommandDemo {
 	 * page or try to kill the server you will get a long delay before
 	 * anything happens.
 	 */
+	
 	public static void executeDemo(ActorRef out) {
 
 		BasicCommands.addPlayer1Notification(out, "Command Demo", 2);
@@ -47,7 +48,7 @@ public class CommandDemo {
 		// drawUnit
 		BasicCommands.addPlayer1Notification(out, "drawUnit", 2);
 		Unit unit = BasicObjectBuilders.loadUnit(StaticConfFiles.humanAvatar, 0, Unit.class);
-		unit.setPositionByTile(tile); 
+		// unit.setPositionByTile(tile); 
 		BasicCommands.drawUnit(out, unit, tile);
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 
@@ -90,14 +91,14 @@ public class CommandDemo {
 		// drawUnit
 		BasicCommands.addPlayer1Notification(out, "drawUnit", 2);
 		Unit fire_spitter = BasicObjectBuilders.loadUnit(StaticConfFiles.u_fire_spitter, 1, Unit.class);
-		fire_spitter.setPositionByTile(tile); 
+		// fire_spitter.setPositionByTile(tile); 
 		BasicCommands.drawUnit(out, fire_spitter, tile);
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 
 		// drawUnit
 		BasicCommands.addPlayer1Notification(out, "drawUnit", 2);
 		Unit planar_scout = BasicObjectBuilders.loadUnit(StaticConfFiles.u_planar_scout, 2, Unit.class);
-		planar_scout.setPositionByTile(tile2); 
+		// planar_scout.setPositionByTile(tile2); 
 		BasicCommands.drawUnit(out, planar_scout, tile2);
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 
@@ -156,20 +157,20 @@ public class CommandDemo {
 
 		// drawUnit
 		BasicCommands.addPlayer1Notification(out, "drawUnit", 2);
-		unit.setPositionByTile(tile); 
+		// unit.setPositionByTile(tile); 
 		BasicCommands.drawUnit(out, fire_spitter, tile);
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 
 		// moveUnitToTile
 		BasicCommands.addPlayer1Notification(out, "moveUnitToTile", 2);
 		BasicCommands.moveUnitToTile(out, fire_spitter, tile5);
-		unit.setPositionByTile(tile5); 
+		// unit.setPositionByTile(tile5); 
 		try {Thread.sleep(4000);} catch (InterruptedException e) {e.printStackTrace();}
 
 		// moveUnitToTile
 		BasicCommands.addPlayer1Notification(out, "moveUnitToTile (back)", 2);
 		BasicCommands.moveUnitToTile(out, fire_spitter, tile);
-		unit.setPositionByTile(tile); 
+		// unit.setPositionByTile(tile); 
 		try {Thread.sleep(4000);} catch (InterruptedException e) {e.printStackTrace();}
 
 		// deleteUnit
@@ -350,7 +351,7 @@ public class CommandDemo {
 		for (String deck1CardFile : deck1Units) {
 			BasicCommands.addPlayer1Notification(out, deck1CardFile, 2);
 			unit = BasicObjectBuilders.loadUnit(deck1CardFile, unitID, Unit.class);
-			unit.setPositionByTile(tile); 
+			// unit.setPositionByTile(tile); 
 			BasicCommands.drawUnit(out, unit, tile);
 			try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 
@@ -395,7 +396,7 @@ public class CommandDemo {
 		for (String deck2CardFile : deck2Units) {
 			BasicCommands.addPlayer1Notification(out, deck2CardFile, 2);
 			unit = BasicObjectBuilders.loadUnit(deck2CardFile, unitID, Unit.class);
-			unit.setPositionByTile(tile); 
+			// unit.setPositionByTile(tile); 
 			BasicCommands.drawUnit(out, unit, tile);
 			try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 
@@ -420,21 +421,9 @@ public class CommandDemo {
 			try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 
 			unitID++;
-		}	
+		}
+
 
 	}
-	public static void executeDemo01(ActorRef out) 
-		{
-			// BasicCommands.addPlayer1Notification(out, "drawTile[3,2]", 2); 		Tile tile = BasicObjectBuilders.loadTile(3, 2);
-			for(int i=0;i<5;i++)
-			{
-				for(int j=0;j<10;j++)
-				{
-					Tile tile = BasicObjectBuilders.loadTile(j, i);
-					BasicCommands.drawTile(out, tile, 0);
-				}
-			}	
-			
-		}
 
 }

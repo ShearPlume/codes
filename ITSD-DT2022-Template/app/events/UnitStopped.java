@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 import akka.actor.ActorRef;
 import structures.GameState;
+import structures.basic.Player;
 
 /**
  * Indicates that a unit instance has stopped moving. 
@@ -24,6 +25,12 @@ public class UnitStopped implements EventProcessor{
 	public void processEvent(ActorRef out, GameState gameState, JsonNode message) {
 		
 		int unitid = message.get("id").asInt();
+		
+	}
+
+	@Override
+	public void processPlayerEvent(ActorRef out, GameState gameState, JsonNode message, Player humanPlayer) {
+		// TODO Auto-generated method stub
 		
 	}
 

@@ -25,6 +25,8 @@ public class Unit {
 	Position position;
 	UnitAnimationSet animations;
 	ImageCorrection correction;
+	boolean hasAttacked;
+	boolean hasMoved;
 	
 	public Unit() {}
 	
@@ -103,8 +105,10 @@ public class Unit {
 	 * @param tile
 	 */
 	@JsonIgnore
-	public void setPositionByTile(Tile tile) {
+	public void setPositionByTile(Tile tile, BattleField battleField, Unit unit) {
 		position = new Position(tile.getXpos(),tile.getYpos(),tile.getTilex(),tile.getTiley());
+		battleField.tiles[position.tiley][position.tilex].setUnitInHere(unit);
+		
 	}
 	
 	

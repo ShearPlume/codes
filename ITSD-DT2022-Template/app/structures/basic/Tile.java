@@ -27,6 +27,7 @@ public class Tile {
 	int height;
 	int tilex;
 	int tiley;
+	private Unit unitInHere;
 	
 	public Tile() {}
 	
@@ -40,6 +41,7 @@ public class Tile {
 		this.height = height;
 		this.tilex = tilex;
 		this.tiley = tiley;
+		this.unitInHere = null;
 	}
 	
 	public Tile(List<String> tileTextures, int xpos, int ypos, int width, int height, int tilex, int tiley) {
@@ -51,6 +53,13 @@ public class Tile {
 		this.height = height;
 		this.tilex = tilex;
 		this.tiley = tiley;
+		this.unitInHere = null;
+	}
+	public Unit getUnitInHere() {
+		return unitInHere;
+	}
+	public void setUnitInHere(Unit unit) {
+		this.unitInHere = unit;
 	}
 	public List<String> getTileTextures() {
 		return tileTextures;

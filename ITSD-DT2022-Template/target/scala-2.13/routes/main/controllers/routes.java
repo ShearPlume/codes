@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/18309/Documents/codes/ITSD-DT2022-Template/conf/routes
-// @DATE:Tue Jan 31 03:48:50 GMT 2023
+// @DATE:Wed Feb 08 00:08:14 GMT 2023
 
 package controllers;
 

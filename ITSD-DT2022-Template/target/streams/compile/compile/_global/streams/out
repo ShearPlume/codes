@@ -1,1 +1,106 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\Admin\Documents\codes\ITSD-DT2022-Template\app\demo\CommandDemo.java:440:1: 进行语法分析时已到达文件结尾[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\CardClicked.java:4:1: 无法访问com.fasterxml.jackson.databind.JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  错误的类文件: C:\Users\18309\Documents\codes\ITSD-DT2022-Template\null\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar(/com/fasterxml/jackson/databind/JsonNode.class)[0m
+[0m[[0m[31merror[0m] [0m[0m    无法访问文件: java.nio.channels.ClosedByInterruptException[0m
+[0m[[0m[31merror[0m] [0m[0m    请删除该文件或确保该文件位于正确的类路径子目录中。[0m
+[0m[[0m[31merror[0m] [0m[0mcom.fasterxml.jackson.databind.JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\CardClicked.java:27:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.CardClicked[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\CardClicked.java:41:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.CardClicked[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\EventProcessor.java:26:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 接口 events.EventProcessor[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\EventProcessor.java:27:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 接口 events.EventProcessor[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\EndTurnClicked.java:23:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.EndTurnClicked[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\EndTurnClicked.java:28:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.EndTurnClicked[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\Heartbeat.java:25:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.Heartbeat[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\Heartbeat.java:30:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.Heartbeat[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\Initalize.java:27:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.Initalize[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\Initalize.java:40:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.Initalize[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\OtherClicked.java:23:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.OtherClicked[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\OtherClicked.java:29:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.OtherClicked[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\TileClicked.java:27:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.TileClicked[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\TileClicked.java:39:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.TileClicked[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\UnitMoving.java:24:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.UnitMoving[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\UnitMoving.java:31:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.UnitMoving[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\UnitStopped.java:25:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.UnitStopped[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\events\UnitStopped.java:32:1: 找不到符号[0m
+[0m[[0m[31merror[0m] [0m[0m  符号:   类 JsonNode[0m
+[0m[[0m[31merror[0m] [0m[0m  位置: 类 events.UnitStopped[0m
+[0m[[0m[31merror[0m] [0m[0mJsonNode[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\commands\BasicCommands.java:51:1: 无法访问com.fasterxml.jackson.databind.node.ContainerNode[0m
+[0m[[0m[31merror[0m] [0m[0m  错误的类文件: C:\Users\18309\Documents\codes\ITSD-DT2022-Template\null\Coursier\cache\v1\https\repo1.maven.org\maven2\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar(/com/fasterxml/jackson/databind/node/ContainerNode.class)[0m
+[0m[[0m[31merror[0m] [0m[0m    无法访问文件: java.nio.channels.ClosedChannelException[0m
+[0m[[0m[31merror[0m] [0m[0m    请删除该文件或确保该文件位于正确的类路径子目录中。[0m
+[0m[[0m[31merror[0m] [0m[0mreturnMessage.put[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\commands\BasicCommands.java:52:1: 无法访问com.fasterxml.jackson.core[0m
+[0m[[0m[31merror[0m] [0m[0m  null[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\commands\BasicCommands.java:52:1: 无法访问com.fasterxml.jackson.core.ObjectCodec[0m
+[0m[[0m[31merror[0m] [0m[0m  找不到com.fasterxml.jackson.core.ObjectCodec的类文件[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\commands\BasicCommands.java:79:1: 无法访问com.fasterxml.jackson.core.Versioned[0m
+[0m[[0m[31merror[0m] [0m[0m  找不到com.fasterxml.jackson.core.Versioned的类文件[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\commands\BasicCommands.java:79:1: 无法访问com.fasterxml.jackson.core.JsonProcessingException[0m
+[0m[[0m[31merror[0m] [0m[0m  找不到com.fasterxml.jackson.core.JsonProcessingException的类文件[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\commands\BasicCommands.java:80:1: 无法访问com.fasterxml.jackson.core.Versioned[0m
+[0m[[0m[31merror[0m] [0m[0m  找不到com.fasterxml.jackson.core.Versioned的类文件[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\commands\BasicCommands.java:80:1: 无法访问com.fasterxml.jackson.core.TreeNode[0m
+[0m[[0m[31merror[0m] [0m[0m  找不到com.fasterxml.jackson.core.TreeNode的类文件[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\commands\BasicCommands.java:104:1: 无法访问com.fasterxml.jackson.core.Versioned[0m
+[0m[[0m[31merror[0m] [0m[0m  找不到com.fasterxml.jackson.core.Versioned的类文件[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\commands\BasicCommands.java:104:1: 无法访问com.fasterxml.jackson.core.JsonParser[0m
+[0m[[0m[31merror[0m] [0m[0m  找不到com.fasterxml.jackson.core.JsonParser的类文件[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\commands\BasicCommands.java:129:1: 无法访问com.fasterxml.jackson.core.Versioned[0m
+[0m[[0m[31merror[0m] [0m[0m  找不到com.fasterxml.jackson.core.Versioned的类文件[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\commands\BasicCommands.java:129:1: 无法访问com.fasterxml.jackson.core.Versioned[0m
+[0m[[0m[31merror[0m] [0m[0m  找不到com.fasterxml.jackson.core.Versioned的类文件[0m
+[0m[[0m[31merror[0m] [0m[0mmapper.readTree[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Users\18309\Documents\TeamObject\ITSD-DT2022-Template\app\structures\basic\Tile.java:116:1: 无法访问com.fasterxml.jackson.core.JsonParseException[0m
+[0m[[0m[31merror[0m] [0m[0m  找不到com.fasterxml.jackson.core.JsonParseException的类文件[0m
+[0m[[0m[31merror[0m] [0m[0mmapper.readValue[0m

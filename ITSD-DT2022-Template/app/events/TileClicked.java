@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 import akka.actor.ActorRef;
 import structures.GameState;
+import structures.basic.Player;
 
 /**
  * Indicates that the user has clicked an object on the game canvas, in this case a tile.
@@ -28,9 +29,15 @@ public class TileClicked implements EventProcessor{
 		int tilex = message.get("tilex").asInt();
 		int tiley = message.get("tiley").asInt();
 		
-		if (gameState.something == true) {
-			// do some logic
-		}
+//		if (gameState.something == true) {
+//			// do some logic
+//		}
+		
+	}
+
+	@Override
+	public void processPlayerEvent(ActorRef out, GameState gameState, JsonNode message, Player humanPlayer) {
+		// TODO Auto-generated method stub
 		
 	}
 
