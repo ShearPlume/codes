@@ -30,7 +30,7 @@ public class Initalize implements EventProcessor{
 		gameState.gameInitalised = true;	
 		RoundCounter roundCounter = new RoundCounter();
 		
-		Initialization2.gameInitialize(out);
+		Initialization.gameInitialize(out, gameState);
 		
 		gameState.humanPlayerTurn = true;
 		
@@ -40,7 +40,6 @@ public class Initalize implements EventProcessor{
 	@Override
 	public void processPlayerEvent(ActorRef out, GameState gameState, JsonNode message, Player humanPlayer) {
 		// TODO Auto-generated method stub
-		Initialization2.gameInitialize(out,humanPlayer);
 		
 	}
 

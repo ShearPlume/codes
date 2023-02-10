@@ -6,14 +6,13 @@ import akka.actor.ActorRef;
 import structures.basic.BattleField;
 import structures.basic.Card;
 import structures.basic.Player;
-import structures.basic.Tile;
 import structures.basic.Unit;
 import structures.GameState;
 import utils.BasicObjectBuilders;
 import utils.StaticConfFiles;
 
 public class Initialization {
-	public static void gameInitialize(ActorRef out) {
+	public static void gameInitialize(ActorRef out,GameState gs) {
 		// Ye Zhang: 
 		// Create battle field, draw tiles and generate every tile objects.
 		// Out board X index is from 0~8, and Y index is from 0~4:
@@ -23,13 +22,11 @@ public class Initialization {
 		//	2	口	口	口	口	口	口	口	口	口
 		//	3	口	口	口	口	口	口	口	口	口
 		//	4	口	口	口	口	口	口	口	口	口
-		BattleField battleField = new BattleField();
 		BasicCommands.addPlayer1Notification(out, "Preparing battle field...", 4);
-		Tile t;
 		for(int x = 0 ; x <= 8 ; x++) {
 			for(int y = 0 ; y <= 4 ; y++) {
-				t= BasicObjectBuilders.loadTile(x, y);
-				BasicCommands.drawTile(out, t, 0);
+				gs.battleField.tiles[y][x] = BasicObjectBuilders.loadTile(x, y);
+				BasicCommands.drawTile(out, gs.battleField.tiles[y][x], 0);
 				try {Thread.sleep(50);} catch (InterruptedException e) {e.printStackTrace();}
 			}
 		}
@@ -40,50 +37,50 @@ public class Initialization {
 		// player1 = human (left), player2 = AI (right)
 		// Human player initialization
 		BasicCommands.addPlayer1Notification(out, "generating human player...", 2);// human player object
-		Player humanPlayer = new Player(20, 0);
-		BasicCommands.setPlayer1Health(out, humanPlayer);
+		gs.humanPlayer=new Player(20, 0);
+		BasicCommands.setPlayer1Health(out, gs.humanPlayer);
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 
 		BasicCommands.addPlayer1Notification(out, "generating human player's deck...", 2);// human player's deck
-		generateHumanPlayerDeck(humanPlayer);
+		generateHumanPlayerDeck(gs.humanPlayer);
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 		
 		BasicCommands.addPlayer1Notification(out, "generating human avatar...", 3);// human player's avatar
-		Unit humanAvatar = BasicObjectBuilders.loadUnit(StaticConfFiles.humanAvatar, 0, Unit.class);
-		humanPlayer.getHavingUnit().add(humanAvatar);// add
-		humanAvatar.setPositionByTile(battleField.tiles[2][1], battleField, humanAvatar); 
-		BasicCommands.drawUnit(out, humanAvatar, battleField.tiles[2][1]);
+		gs.humanAvatar = BasicObjectBuilders.loadUnit(StaticConfFiles.humanAvatar, 0, Unit.class);
+		gs.humanPlayer.getHavingUnit().add(gs.humanAvatar);// add
+		gs.humanAvatar.setPositionByTile(gs.battleField.tiles[2][1], gs.battleField, gs.humanAvatar); 
+		BasicCommands.drawUnit(out, gs.humanAvatar, gs.battleField.tiles[2][1]);
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
-		BasicCommands.setUnitAttack(out, humanAvatar, 2);
-		BasicCommands.setUnitHealth(out, humanAvatar, humanPlayer.getHealth());
+		BasicCommands.setUnitAttack(out, gs.humanAvatar, 2);
+		BasicCommands.setUnitHealth(out, gs.humanAvatar, gs.humanPlayer.getHealth());
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 		
 		BasicCommands.addPlayer1Notification(out, "generating human initial cards...", 3);// human player's first 3 cards
-		initialHumanPlayerCards(out, humanPlayer);
+		initialHumanPlayerCards(out, gs.humanPlayer);
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 		
 		// AI player initialization
 		BasicCommands.addPlayer1Notification(out, "generating AI player...", 2);
-		Player aiPlayer = new Player(20, 0);
-		BasicCommands.setPlayer2Health(out, aiPlayer);
+		gs.aiPlayer = new Player(20, 0);
+		BasicCommands.setPlayer2Health(out, gs.aiPlayer);
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 		
 		BasicCommands.addPlayer1Notification(out, "generating AI player's deck...", 2);
-		generateAIPlayerDeck(aiPlayer);
+		generateAIPlayerDeck(gs.aiPlayer);
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 		
 		BasicCommands.addPlayer1Notification(out, "generating AI avatar...", 3);// AI player's avatar
-		Unit aiAvatar = BasicObjectBuilders.loadUnit(StaticConfFiles.aiAvatar, 1, Unit.class);
-		aiPlayer.getHavingUnit().add(aiAvatar);
-		aiAvatar.setPositionByTile(battleField.tiles[2][7], battleField, aiAvatar); 
-		BasicCommands.drawUnit(out, aiAvatar, battleField.tiles[2][7]);
+		gs.aiAvatar = BasicObjectBuilders.loadUnit(StaticConfFiles.aiAvatar, 1, Unit.class);
+		gs.aiPlayer.getHavingUnit().add(gs.aiAvatar);
+		gs.aiAvatar.setPositionByTile(gs.battleField.tiles[2][7], gs.battleField, gs.aiAvatar); 
+		BasicCommands.drawUnit(out, gs.aiAvatar, gs.battleField.tiles[2][7]);
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
-		BasicCommands.setUnitAttack(out, aiAvatar, 2);
-		BasicCommands.setUnitHealth(out, aiAvatar, aiPlayer.getHealth());
+		BasicCommands.setUnitAttack(out, gs.aiAvatar, 2);
+		BasicCommands.setUnitHealth(out, gs.aiAvatar, gs.aiPlayer.getHealth());
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 		
 		BasicCommands.addPlayer1Notification(out, "generating ai initial cards...", 3);// AI player's first 3 cards
-		initialAIPlayerCards(out, aiPlayer);
+		initialAIPlayerCards(out, gs.aiPlayer);
 		try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
 		
 		BasicCommands.addPlayer1Notification(out, "Game start", 2);

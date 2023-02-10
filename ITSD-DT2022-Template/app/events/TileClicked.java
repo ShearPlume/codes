@@ -30,7 +30,7 @@ public class TileClicked implements EventProcessor{
 		int tilex = message.get("tilex").asInt();
 		int tiley = message.get("tiley").asInt();
 
-		TileClickedToDo.clickedResponce(out,tilex,tiley);
+		TileClickedToDo.clickedResponce(out,tilex,tiley,gameState);
 		
 //		if (gameState.something == true) {
 //			// do some logic

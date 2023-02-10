@@ -13,18 +13,13 @@ import utils.BasicObjectBuilders;
 import utils.StaticConfFiles;
 
 public class TileClickedToDo {
-    public static void clickedResponce(ActorRef out,int tx,int ty) 
+    public static void clickedResponce(ActorRef out,int tx,int ty,GameState gs) 
     {
-        BasicCommands.addPlayer1Notification(out, "Preparing battle field...", 4);
-        BasicCommands.addPlayer1Notification(out, "I got these two ints:"+tx+" and "+ty, 4);
-        Tile t1= BasicObjectBuilders.loadTile(tx, ty);
-        BasicCommands.drawTile(out, t1, 2);
-        try {Thread.sleep(50);} catch (InterruptedException e) {e.printStackTrace();}
+        // BasicCommands.addPlayer1Notification(out, "Preparing battle field...", 4);
+        BasicCommands.addPlayer1Notification(out, "I got these two ints:"+tx+" and "+ty, 4);//点击tile后打印tile信息
+        BasicCommands.drawTile(out, gs.battleField.tiles[ty][tx], 2);//变红
+        try {Thread.sleep(500);} catch (InterruptedException e) {e.printStackTrace();}
+        BasicCommands.drawTile(out, gs.battleField.tiles[ty][tx], 0);//50ms 后变回去
         // try {Thread.sleep(2000);} catch (InterruptedException e) {e.printStackTrace();}
-    }
-    public static void clickedResponce2(ActorRef out) 
-    {
-        BasicCommands.addPlayer1Notification(out, "Preparing battle field...", 4);
-        System.out.println("asd");
     }
 }

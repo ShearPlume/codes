@@ -110,6 +110,10 @@ public class Unit {
 		battleField.tiles[position.tiley][position.tilex].setUnitInHere(unit);
 		
 	}
+
+	public void setPositionByTile(Tile tile) {
+		position = new Position(tile.getXpos(),tile.getYpos(),tile.getTilex(),tile.getTiley());
+	}
 	
 	
 }
