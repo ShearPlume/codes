@@ -40,7 +40,7 @@ public class GameActor extends AbstractActor {
 	private ActorRef out; // The ActorRef can be used to send messages to the front-end UI
 	private Map<String,EventProcessor> eventProcessors; // Classes used to process each type of event
 	private GameState gameState; // A class that can be used to hold game state information
-
+	public static String s1;
 	/**
 	 * Constructor for the GameActor. This is called by the GameController when the websocket
 	 * connection to the front-end is established.
