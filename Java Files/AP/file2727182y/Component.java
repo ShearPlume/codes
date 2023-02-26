@@ -1,5 +1,5 @@
-package file2727182y;
 
+package file2727182y;
 public interface Component {
 	public String getName();
 	public int getSize();

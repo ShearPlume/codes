@@ -18,5 +18,9 @@ public class FileTest {
 		System.out.println(coursework.display("\t"));
 
 		System.out.println( coursework.search("unit test 1").getName() );
+		// String a="asd";
+		// StringBuilder sb=new StringBuilder(a);
+		// System.out.println(sb.append("fku"));
+		
 	}
 }

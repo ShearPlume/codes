@@ -3,7 +3,6 @@ package file2727182y;
 public class File implements Component {
     String name;
     int size;
-    Component fatherDir;
 
     public File(String name, int size) {
         this.name = name;
@@ -19,13 +18,13 @@ public class File implements Component {
     @Override
     public int getSize() {
         // TODO Auto-generated method stub
-        return size;
+        return this.size;
     }
 
     @Override
     public int getCount() {
         // TODO Auto-generated method stub
-        return 0;
+        return 1;
     }
 
     @Override
