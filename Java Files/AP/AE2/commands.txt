@@ -1,0 +1,12 @@
+start 10456060
+running
+get 10456060
+start 72345680
+start 534912560
+get 534912560
+running
+cancel 72345680
+running
+finish
+get 534912560
+get 10456060
