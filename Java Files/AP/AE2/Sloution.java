@@ -105,7 +105,6 @@ public class Sloution implements CommandRunner {
                             {
                                 allFinished = false;
                             }
-                            continue;
                         }
                     }
                     if (allFinished) {

@@ -1,4 +1,5 @@
 package CSD;
+
 public class Rotor96Crypto {
 	/*
 	 *  Rotor96Crypto.java (C) 2023 Nguyen Truong
