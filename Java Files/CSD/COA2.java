@@ -16,11 +16,12 @@ public class COA2 {
         // fun(COAcipherText);
         // fun2(COAcipherText);
         int i=1;
-        while(verifyActualNum(i, COAcipherText, plainText)!=1)
-        {
-            System.out.println("num of texts: "+verifyActualNum(i, COAcipherText, plainText));
-            i++;
+        int numOfQualified=0;
+        do{
+            numOfQualified= verifyActualNum(i, COAcipherText, plainText);
+            i++;            
         }
+        while(numOfQualified>1);
         System.out.println("num of texts: "+verifyActualNum(i, COAcipherText, plainText));
         System.out.println("actual num: "+i);
     }
@@ -90,7 +91,7 @@ public class COA2 {
         sc.close();
     }
 
-    public static int verifyActualNum(int textNum,String cipherText,String plainText)
+    public static int expVerifyActualNum(int textNum,String cipherText,String plainText)
     {
         // int tempNum=1;
         int numOfTexts=0;
@@ -102,18 +103,15 @@ public class COA2 {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        char[] realPlaintexts=plainText.toCharArray();
         Scanner sc = new Scanner(fr);// read keys from
         String line;
         while (sc.hasNextLine()) {
-            int englishLetterCounts = 0;
             line = sc.nextLine();
-            int numOfWindows = 0;
-            String plaintexts = Rotor96Crypto.encdec(Rotor96Crypto.DEC, line, cipherText);
-            char[] chars = plaintexts.toCharArray();
-            String wrong = "";
+            char[] tempPlaintexts = Rotor96Crypto.encdec(Rotor96Crypto.DEC, line, cipherText).toCharArray();
             for(int i=0;i<textNum;i++)
             {
-                if(plaintexts.toCharArray()[i] !=plainText.toCharArray()[i])//if any character doesn't match, this text is not meaningful, break
+                if(tempPlaintexts[i] !=realPlaintexts[i])//if any character doesn't match, this text is not meaningful, break
                 {
                     break;
                 }

@@ -1,11 +1,11 @@
-package AE1;
-// Add name and id as comment
-
+package AE;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+// Fukang Yang 2727182y
 
 // and import statements
 
@@ -14,12 +14,6 @@ public class Atom  {
 	private String element;
 	private List<Bond> bonds = new ArrayList<Bond>();//the bonds to child atoms 
 	private int valency;
-
-	public Atom(String type)
-	{
-		element=type;
-		valency=(int)VALENCY_MAP.get(type);
-	}
 	
 
         //this map has been included to help you look up valencies

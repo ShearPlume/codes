@@ -1,3 +1,4 @@
+package AE1;
 //you can use this to test your implementation - or create your own test program
 //you won't submit this file (or your own test file)
 
@@ -22,48 +23,48 @@ public class TestMolecule {
 			Molecule mol = new TreeMolecule(carbonAtoms.get(0));//all molecules contain an initial carbon atom
 			
 			if(name.equals("methane")) return mol;
-			if(name.equals("ethane")) {
+			if(name.equals("ethane")) {//乙烷
 				mol.addBond(carbonAtoms.get(0), carbonAtoms.get(1), 1);
 				return mol;
 			}
 			
-			if(name.equals("ethene")) {
+			if(name.equals("ethene")) {//乙烯
 				mol.addBond(carbonAtoms.get(0), carbonAtoms.get(1), 2);
 				return mol;
 			}
 			
-			if(name.equals("ethyne")) {
+			if(name.equals("ethyne")) {// 乙炔
 				mol.addBond(carbonAtoms.get(0), carbonAtoms.get(1), 3);
 				return mol;
 			}
 			
-			if(name.equals("dimethyl ether")) {
+			if(name.equals("dimethyl ether")) {// 二甲醚
 				mol.addBond(carbonAtoms.get(0), oxygenAtoms.get(0), 1);
 				mol.addBond(oxygenAtoms.get(0), carbonAtoms.get(1), 1);
 				
 				return mol;
 			}
 			
-			if(name.equals("ethanol")) {
+			if(name.equals("ethanol")) {//乙醇
 				mol.addBond(carbonAtoms.get(0), carbonAtoms.get(1), 1);
 				mol.addBond(carbonAtoms.get(1), oxygenAtoms.get(0), 1);
 				
 				return mol;
 			}
 			
-			if(name.equals("acetaldehyde")) {
+			if(name.equals("acetaldehyde")) {//乙醛
 				mol.addBond(carbonAtoms.get(0), carbonAtoms.get(1), 1);
 				mol.addBond(carbonAtoms.get(1), oxygenAtoms.get(0), 2);
 				
 				return mol;
 			}
 			
-			if(name.equals("hydrogen cyanide")) {
+			if(name.equals("hydrogen cyanide")) {//氰化氢
 				mol.addBond(carbonAtoms.get(0), nitrogenAtoms.get(0), 3);
 				return mol;
 			}
 			
-			if(name.equals("isobutyl alcohol")) {
+			if(name.equals("isobutyl alcohol")) {//异丁醇
 				mol.addBond(carbonAtoms.get(0), carbonAtoms.get(1), 1);
 				mol.addBond(carbonAtoms.get(1), carbonAtoms.get(2), 1);
 				mol.addBond(carbonAtoms.get(1), carbonAtoms.get(3), 1);
@@ -72,7 +73,7 @@ public class TestMolecule {
 				return mol;
 			}
 			
-			if(name.equals("5-amino-4-methylpentanamide")) {
+			if(name.equals("5-amino-4-methylpentanamide")) {//5-amino-4-methylpentanamide
 				mol.addBond(carbonAtoms.get(0), carbonAtoms.get(1), 1);
 				mol.addBond(carbonAtoms.get(1), carbonAtoms.get(2), 1);
 				mol.addBond(carbonAtoms.get(2), carbonAtoms.get(3), 1);
