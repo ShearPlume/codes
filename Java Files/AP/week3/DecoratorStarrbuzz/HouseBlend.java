@@ -1,3 +1,5 @@
+package week3.DecoratorStarrbuzz;
+
 public class HouseBlend extends Beverage {
     public HouseBlend() {
         description = "House Blend Coffee";

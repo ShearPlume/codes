@@ -1,3 +1,5 @@
+package week3.DecoratorStarrbuzz;
+
 public class Soy extends CondimentDecorator {
     Beverage beverage;
 

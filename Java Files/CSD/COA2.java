@@ -18,11 +18,11 @@ public class COA2 {
         int i=1;
         int numOfQualified=0;
         do{
-            numOfQualified= verifyActualNum(i, COAcipherText, plainText);
+            numOfQualified= expVerifyActualNum(i, COAcipherText, plainText);
             i++;            
         }
         while(numOfQualified>1);
-        System.out.println("num of texts: "+verifyActualNum(i, COAcipherText, plainText));
+        System.out.println("num of texts: "+expVerifyActualNum(i, COAcipherText, plainText));
         System.out.println("actual num: "+i);
     }
 

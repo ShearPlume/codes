@@ -122,7 +122,7 @@ public class Sloution implements CommandRunner {
                 for(Thread t:threadsVector)
                 {
                     t.interrupt();
-                    calculatorsVector.get(threadsVector.indexOf(t)).setSign(true);
+                    calculatorsVector.get(threadsVector.indexOf(t)).setSign(true);//set cancelled sign to true, so that it won't return the result
                     // try {
                     //     t.join(0);
                     // } catch (InterruptedException e) {

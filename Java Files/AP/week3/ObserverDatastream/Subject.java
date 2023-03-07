@@ -1,3 +1,5 @@
+package week3.ObserverDatastream;
+
 import java.util.ArrayList;
 
 public class Subject {

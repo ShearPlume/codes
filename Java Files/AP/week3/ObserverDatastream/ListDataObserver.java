@@ -1,3 +1,5 @@
+package week3.ObserverDatastream;
+
 public class ListDataObserver extends Observer {
 	public ListDataObserver(Subject subject) {
 		this.subject = subject;

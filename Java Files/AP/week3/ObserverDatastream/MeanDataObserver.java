@@ -1,3 +1,5 @@
+package week3.ObserverDatastream;
+
 public class MeanDataObserver extends Observer {
 	public MeanDataObserver(Subject subject) {
 		this.subject = subject;
