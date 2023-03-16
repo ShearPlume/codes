@@ -26,10 +26,10 @@ public class Sloution implements CommandRunner {
                     return ("Invalid command");
                     // TODO: handle exception
                 }
-                SlowCalculator sc = new SlowCalculator(Integer.parseInt(split[1]));
-                calculatorsVector.add(sc);
-                Thread th = new Thread(sc);
-                threadsVector.add(th);
+                SlowCalculator sc = new SlowCalculator(Integer.parseInt(split[1]));//new calcultor
+                calculatorsVector.add(sc);// add to vector
+                Thread th = new Thread(sc);// new thread
+                threadsVector.add(th);//add to vector
                 th.start();
                 return ("Started " + split[1]);
             }

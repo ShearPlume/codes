@@ -113,7 +113,7 @@ public class TestMolecule {
 			ArrayList<Atom> oxygenAtoms = atomList(10, "O");// supply of oxygen atoms
 			ArrayList<Atom> nitrogenAtoms = atomList(10, "N");// supply of nitrogen atoms
 			String name = names[i];
-			TreeMolecule mol = createMolecule(name, carbonAtoms, oxygenAtoms, nitrogenAtoms);
+			Molecule mol = createMolecule(name, carbonAtoms, oxygenAtoms, nitrogenAtoms);
 			String sm = ((TreeMolecule) mol).smilesString();
 			// System.out.println("sm: ");
 			// System.out.println("sm: "+sm);

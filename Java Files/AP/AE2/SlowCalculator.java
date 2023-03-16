@@ -34,7 +34,7 @@ public class SlowCalculator implements Runnable {
     public void run() {
         final int result = calculate(N);
         // final long tempN=this.N;
-        if(!ifCancelled)
+        if(!ifCancelled)//in case it was interrupted and returned an incorrect result, then we do not give it to R
         R=result;
 
         // System.out.println(result);  // you'll be changing this
@@ -46,6 +46,9 @@ public class SlowCalculator implements Runnable {
         // You should not modify the calculation performed by this class, but you may want to add support for interruption
         int count = 0;
         for (long candidate = 2; candidate < N; ++candidate) {
+
+            if(Thread.currentThread().isInterrupted())
+            break;//stop the calculation if interrupted
             if (isPrime(candidate)) {
                 if (Math.abs(N) % candidate == 0) {
                     count++;
